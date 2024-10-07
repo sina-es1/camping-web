@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    font-family: "";
+}
+:root{
+    --font-ar:font family:"archivo";
+    --font-ar:font family:"roboto-M";
+    --font-ar:font family:"roboto-R";
+    -primary-color:#E76F51;
+    --secondary-color:#F8E1DB;
+    --gary:#D2D2D2;
+    --dark:#3B3735;
+}
