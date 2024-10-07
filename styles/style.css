@@ -3,9 +3,9 @@
     font-family: "";
 }
 :root{
-    --font-ar:font family:"archivo";
-    --font-ar:font family:"roboto-M";
-    --font-ar:font family:"roboto-R";
+    --font-archivo:font family:"archivo";
+    --font-roboto-m:font family:"roboto-M";
+    --font-roboto-r:font family:"roboto-R";
     -primary-color:#E76F51;
     --secondary-color:#F8E1DB;
     --gary:#D2D2D2;
