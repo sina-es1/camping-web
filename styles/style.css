@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
-    font-family: "";
+}
+*::after,*::before{
+    box-sizing: border-box;
 }
 :root{
     --font-archivo:font family:"archivo";
@@ -10,4 +12,8 @@
     --secondary-color:#F8E1DB;
     --gary:#D2D2D2;
     --dark:#3B3735;
+}
+body{
+    font-family: var(--font-roboto-m);
+    background-color:#FAF4F2;
 }
