@@ -17,3 +17,11 @@ body{
     font-family: var(--font-roboto-m);
     background-color:#FAF4F2;
 }
+.header{
+    height: 700px;
+    
+    background:linear-gradient(rgba(59,55,53,0.5), rgba(59,55,53,0.5)) ,url("../images/header-bg.jpg") no-repeat center  ;
+    background-size: cover;
+    border-radius:0 0 100px 100px ;
+
+}
