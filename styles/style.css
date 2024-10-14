@@ -8,7 +8,7 @@
     --font-archivo:font family:"archivo";
     --font-roboto-m:font family:"roboto-M";
     --font-roboto-r:font family:"roboto-R";
-    -primary-color:#E76F51;
+    --primary-color:#E76F51;
     --secondary-color:#F8E1DB;
     --gary:#D2D2D2;
     --dark:#3B3735;
@@ -24,6 +24,67 @@ body{
     background-size: cover;
     border-radius:0 0 100px 100px ;
 }
+.navbar{
+
+
+}
 .desktopmenu{
+    display: none;
+}
+.desktopmenuli{
+
+}
+.desktopmenulink{
+
+}
+.desktopmenulinkactive{
+
+}
+.desktopnavlinks{
+display: none;
+}
+.desktopnavlink{
+
+}
+.mobilenavmenu{
+ display: none;
+}
+.title{
+
+}
+.mobilemenu{
+
+}
+.mobilemenuli{
+
+}
+.mobilemenulink{
+
+}
+.mobilemenulinkactive{
+
+}
+.mobilenavmenulinks{
+
+}
+.mobilenavmenulink{
+
+}
+.navbtn{
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbtnline{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+
 }
