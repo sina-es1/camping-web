@@ -4,10 +4,14 @@
 *::after,*::before{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+
+}
 :root{
-    --font-archivo:font family:"archivo";
-    --font-roboto-m:font family:"roboto-M";
-    --font-roboto-r:font family:"roboto-R";
+    --font-archivo:"archivo";
+    --font-roboto-m:"roboto-M";
+    --font-roboto-r:"roboto-R";
     --primary-color:#E76F51;
     --secondary-color:#F8E1DB;
     --gary:#D2D2D2;
@@ -23,28 +27,71 @@ body{
     background:linear-gradient(rgba(59,55,53,0.5), rgba(59,55,53,0.5)) ,url("../images/header-bg.jpg") no-repeat center  ;
     background-size: cover;
     border-radius:0 0 100px 100px ;
+
 }
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    font-weight: 400;
 
-
+}
+.applogoimg{
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
 }
 .desktopmenu{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .desktopmenuli{
+    margin-right: 16.5px;
 
 }
 .desktopmenulink{
-
+    color: var(--gary);
+    font-size: 18px;
 }
 .desktopmenulinkactive{
+    color:#fff;
+    position: relative;
+    z-index: 30;
+}
+.desktopmenulinkactive::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    top: 8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    z-index: 20;
 
 }
 .desktopnavlinks{
-display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .desktopnavlink{
+    color: #fff;
+    font-size: 19px;
+    margin-right: 18px;
 
+}
+.desktopnavlink:nth-of-type(2){
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    border-radius: 100px;
 }
 .mobilenavmenu{
  display: none;
@@ -78,6 +125,8 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 
 }
 .navbtnline{
@@ -87,4 +136,30 @@ display: none;
     background-color: var(--primary-color);
     border-radius: 50px;
 
+}
+.navbtnline::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+}
+.navbtnline::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+}
+.desktopmenucontainer{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
