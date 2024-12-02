@@ -399,7 +399,7 @@ body{
     margin: 15px 0;
 }
 .conectionsdescription{
-    font-family: var(--primary-font-md);
+    font-family: var(--font-roboto-m);
 
 }
 .conectionsemailbox{
