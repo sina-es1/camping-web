@@ -12,6 +12,18 @@
     .navbtn{
         display: none;
      }
+     .conections{
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    .conectionscontent{
+        width: 60%;
+        padding-right: 20px;
+    }
+    .conectionsbanner{
+        width: 40%;
+    }
 }
 @media screen and (min-width:992px) {
     .header{
@@ -21,12 +33,21 @@
 }
 .desktopnavlinks{display: flex;
 }
+.headerdiscription{
+    max-width: 550px;
+}
+    .conectionscontent{
+        width: 60%;
+         padding-right: 40px;
+    }
+    .conectionstitle{margin-bottom: 0;}
 }
 
 @media screen and (min-width:1200px) {
-    
+    .conectionsbanner{width: 420px;}
+    .conectionscontent{width: 600px;}
+    .conections{justify-content: space-between;}
 }
-
 @media screen and (min-width:1400px) {
-    
+    .conections{padding: 30px 60px;}
 }
