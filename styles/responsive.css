@@ -17,6 +17,15 @@
         text-align: left;
         align-items: center;
     }
+    .conections::before{
+        width: auto;
+        height: auto;
+        top: -500px;
+        left: -400px;
+        background-size: auto;
+        background-position: left center;
+
+    }
     .conectionscontent{
         width: 60%;
         padding-right: 20px;
@@ -39,15 +48,32 @@
     .headerdiscription{max-width: 550px;}
     .conectionscontent{width: 60%;padding-right: 40px;}
     .conectionstitle{margin-bottom: 0;}
+    .conections::before{
+        width: auto;
+        height: auto;
+        top: -300px;
+        left: -100px;
+        background-size: auto;
+        background-position: left center;
+    }
 }
 
 @media screen and (min-width:1200px) {
     .conectionsbanner{width: 420px;}
     .conectionscontent{width: 600px;}
     .conections{justify-content: space-between;}
+    .conections::before{
+        width: auto;
+        height: auto;
+        top: -150px;
+        left: -150px;
+        background-size: auto;
+        background-position: left center;
+    }
 
     .footercontainer{justify-content: space-between;}
     .column{margin-bottom: 0; margin-left: 20px;}
+
 }
 @media screen and (min-width:1400px) {
     .conections{padding: 30px 60px;}

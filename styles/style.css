@@ -287,6 +287,26 @@ body{
     color: var(--dark);
     position: relative;
 }
+.locations::before,.locations::after{
+    content: "";
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.locations::before{
+    background: url(../images/svgs/shape2.svg);
+    bottom: 260px;
+    left: -440px;
+    bottom: 400px;
+}
+.locations::after{
+    background: url(../images/svgs/shape1.svg);
+    top: -100px;
+    right: -450px;
+}
 .locationslogo{
     width: 80px;
     height: 80px;
@@ -394,6 +414,20 @@ body{
     overflow: hidden;
     
 }
+.conections::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    bottom: 0;
+    left: -150px;
+    right: 0;
+    background: url(../images/svgs/shape3.svg) no-repeat;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+}
+.conectionscontent{z-index: 50;}
 .conectionstitle{
     font-family: var(--secondary-color);
     font-size: 30px;
@@ -443,7 +477,7 @@ body{
     align-items: center;
 
 }
-.conectionsbanner{}
+.conectionsbanner{z-index: 50;}
 .conectionsimage{
     width: 100%;
 }
