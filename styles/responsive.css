@@ -9,6 +9,7 @@
     
 }
 @media screen and (min-width:768px) {
+    .mobilenavmenu{display: none;}
     .navbtn{
         display: none;
      }
@@ -58,7 +59,7 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1360px) {
     .conectionsbanner{width: 420px;}
     .conectionscontent{width: 600px;}
     .conections{justify-content: space-between;}

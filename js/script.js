@@ -1,7 +1,6 @@
 let btn = document.querySelector("#btn");
-let menu = document.querySelector("#mobilenavmenu")
+let menu = document.querySelector("#mobilenavmenu");
 
-btn.addEventListener("toggle",function (menu){
-    menu.classList.toggle("active")
-    
+btn.addEventListener("click",function (){
+    menu.classList.toggle("active");
 })

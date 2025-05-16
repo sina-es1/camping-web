@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *::after,*::before{
     box-sizing: border-box;
@@ -68,7 +69,10 @@ body{
 .desktopmenulink{
     color: var(--gary);
     font-size: 16px;
-    
+    transition: 0.35s;
+}
+.desktopmenulink:hover{
+    color: #fff;
 }
 .desktopmenulinkactive{
     color:#fff;
@@ -126,7 +130,8 @@ body{
     margin-top: 20px;
 }
 .active{
-   left: 0;
+    animation: active 0.4s forwards;
+    
 }
 .togglebtn{
     position: fixed;
@@ -154,6 +159,16 @@ body{
 }
 .mobilemenuli{
     margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "roboto-R";
+
+}
+.mobilemenuli > a{
+    color: #fff;
+
+}
+.mobilemenuli > a:hover{
+    opacity: 0.85;
 }
 .mobileMenuLink{
     color: #fff;
@@ -244,7 +259,13 @@ body{
 .headera{
     color: #fff;
     background-color: var(--primary-color);
+    transition: 0.3S;
 }
+.headera:hover{
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
 .main{
     
 }
@@ -301,11 +322,12 @@ body{
     bottom: 260px;
     left: -440px;
     bottom: 400px;
+
 }
 .locations::after{
     background: url(../images/svgs/shape1.svg);
     top: -100px;
-    right: -450px;
+    right: -50px;
 }
 .locationslogo{
     width: 80px;
@@ -503,6 +525,7 @@ body{
     top: -25px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(59, 55, 53, 0.05);
+    scroll-behavior: smooth;
 }
 .footer >.container{
     position: relative; 
@@ -546,3 +569,13 @@ body{
     color: var(--dark);
 }
 .footeraplicationmobile{display: block;}
+
+@keyframes active {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
