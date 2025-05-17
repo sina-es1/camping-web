@@ -308,7 +308,7 @@ body{
     color: var(--dark);
     position: relative;
 }
-.locations::before,.locations::after{
+/* .locations::before,.locations::after{
     content: "";
     width: 600px;
     height: 600px;
@@ -328,7 +328,7 @@ body{
     background: url(../images/svgs/shape1.svg);
     top: -100px;
     right: -50px;
-}
+} */
 .locationslogo{
     width: 80px;
     height: 80px;
